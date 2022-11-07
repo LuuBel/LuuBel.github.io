@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+header{
+    background-color: whitesmoke;
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'SF Old Republic', sans-serif;
+    font-family: 'SF Old Republic SC', sans-serif;
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+}
+
+nav{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+ul{
+    display: inline-block;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    text-align: center;
+    margin: inline 20px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px;
+    margin-right: 1opx;
+}
+
+main{
+    background-color: black;
+    width: 100%;
+}
+h1{
+    font-size: 120px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'SF Old Republic', sans-serif;
+    font-family: 'SF Old Republic SC', sans-serif
+}
+
+.container{
+    border: 1px solid white;
+    width: 500px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+img{
+    display: inline-block;
+}
