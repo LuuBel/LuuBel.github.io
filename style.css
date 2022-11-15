@@ -23,17 +23,17 @@ h3{
 }
 .titulo{
     height: 100px;
-    padding-top: 20px;
+    padding-top: 20px; 
 }
 .t-stroke{
     color: transparent;
-  -moz-text-stroke-width: 2px;
-  -webkit-text-stroke-width: 2px;
-  -moz-text-stroke-color: #ffffff;
-  -webkit-text-stroke-color: #66A5AD;
+   -moz-text-stroke-width: 2px;
+   -webkit-text-stroke-width: 2px;
+   -moz-text-stroke-color: #ffffff;
+   -webkit-text-stroke-color: #66A5AD;
 }
 .t-shadow {
-      text-shadow: 5px 5px #003B46;
+    text-shadow: 5px 5px #003B46;
 }
 nav{
     display: inline-block;
@@ -57,6 +57,7 @@ li{
     margin-right: 15px;
     margin-bottom: 5px;
     margin-top: 5px;
+    
 }
 li:hover{
   transform: scale(1.2)
