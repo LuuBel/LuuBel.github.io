@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: 0;
 }
+body{
+  max-width: 1200px- 1800px;
+}
 header{
     background-color: whitesmoke;
 }
@@ -60,7 +63,7 @@ li{
     
 }
 li:hover{
-  transform: scale(1.2)
+  transform: scale(0.7)
 }
 
 .boton{
@@ -79,75 +82,11 @@ h1{
     font-family: 'SF Old Republic', sans-serif;
     font-family: 'SF Old Republic SC', sans-serif;
     font-size: 120px;
-    color: black ;
+    color: #003B46;
+    text-shadow: 3px 3px #C4DFE6 ;
     text-align: center;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    width: 100%;
-    animation: move linear 2000ms infinite;
-    z-index: 2;
 }
-@keyframes move {
-      0% {
-        text-shadow:
-          4px -4px 0 #da0641,
-          3px -3px 0 #da0641,
-          2px -2px 0 #da0641,
-          1px -1px 0 #da0641,
-          -4px 4px 0 #13f1fc,
-          -3px 3px 0 #13f1fc,
-          -2px 2px 0 #13f1fc,
-          -1px 1px 0 #13f1fc
-        ;
-      }
-      25% {
-        text-shadow:
-          -4px -4px 0 #13f1fc,
-          -3px -3px 0 #13f1fc,
-          -2px -2px 0 #13f1fc,
-          -1px -1px 0 #13f1fc,
-          4px 4px 0 #da0641,
-          3px 3px 0 #da0641,
-          2px 2px 0 #da0641,
-          1px 1px 0 #da0641
-        ;
-      }
-      50% {
-        text-shadow:
-          -4px 4px 0 #da0641,
-          -3px 3px 0 #da0641,
-          -2px 2px 0 #da0641,
-          -1px 1px 0 #da0641,
-          4px -4px 0 #13f1fc,
-          3px -3px 0 #13f1fc,
-          2px -2px 0 #13f1fc,
-          1px -1px 0 #13f1fc
-        ;
-      }
-      75% {
-        text-shadow:
-          4px 4px 0 #13f1fc,
-          3px 3px 0 #13f1fc,
-          2px 2px 0 #13f1fc,
-          1px 1px 0 #13f1fc,
-          -4px -4px 0 #da0641,
-          -3px -3px 0 #da0641,
-          -2px -2px 0 #da0641,
-          -1px -1px 0 #da0641;
-      }
-      100% {
-        text-shadow:
-          4px -4px 0 #da0641,
-          3px -3px 0 #da0641,
-          2px -2px 0 #da0641,
-          1px -1px 0 #da0641,
-          -4px 4px 0 #13f1fc,
-          -3px 3px 0 #13f1fc,
-          -2px 2px 0 #13f1fc,
-          -1px 1px 0 #13f1fc;
-      }
-    }
-    
+ 
 .container{
     border: 5px solid black;
     background-color: #040a07;
@@ -167,24 +106,25 @@ img{
     margin-bottom: 5px;
 }
 img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .sucursal{
   font-size: 30px;
 }
 .caja{
-  width: 100%;
-  height: 600px;
+  display: flex;
 }
 .tarjeta{
   margin: 0 auto;
   background: whitesmoke;
-  width: 450px;
-  margin-left: 5px;
-  padding: 5px;
+  margin-left: 2px;
+  padding: 2px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
   border: 2px solid;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 .mapa{
   width: 400px;
@@ -192,29 +132,76 @@ img:hover {
   margin-left: 5px;
   margin-right: 5px;
   display: flex;
-  justify-content: center;
 }
 
 footer{
     background-color: #003B46;
     width: 100%;
-    height: 150px;
+    height: 120px;
 }
 h4{
     font-family: 'SF Old Republic', sans-serif;
     font-family: 'SF Old Republic SC', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: #C4DFE6;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 15px;
     display: inline-block;
-    display: flex;  
 }
 .iconos{
-    display: inline-block;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     color: #C4DFE6;
     font-size: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media screen and (max-width:1060px) {
+        h1{
+            font-size: 100px;
+            color: #C4DFE6;
+            text-shadow: 1px 1px #003B46;
+        }
+    }
+@media screen and (max-width: 889px) {
+    h1{
+        font-size: 80px;
+        color: #C4DFE6;
+        text-shadow: 1px 1px #003B46;
+    }
+}
+@media screen and (max-width: 750px ) {
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    h3{
+        display: none;
+    }
+    .tarjeta iframe{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+@media  screen and (max-width:730px) {
+    h1{
+        font-size: 60px;
+        color: #C4DFE6;
+        text-shadow: 1px 1px #003B46;
+    }
+}    
+@media screen and (max-width: 550px) {
+    h1{
+        font-size: 40px;
+        color: #C4DFE6;
+        text-shadow: 1px 1px #003B46;
+    }
+}
+@media screen and(min-width:412px) {
+    .tarjeta iframe{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
